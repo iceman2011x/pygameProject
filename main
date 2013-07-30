@@ -1,0 +1,31 @@
+import sys, os, pygame
+from pygame.locals import *
+
+pygame.init()
+clock=pygame.time.Clock()
+window=pygame.display.set_mode((600,400))
+pygame.display.set_caption("Project 1")
+
+
+##Main Loop##
+##opens window and closes on exit##
+
+while True:
+
+    for event in pygame.event.get():
+        if event.type==QUIT:
+            pygame.quit()
+            sys.exit()
+        elif event.type==KEYDOWN and event.key==K_ESCAPE:
+            pygame.quit()
+            sys.exit()
+        elif event.type==KEYDOWN and event.key==K_q:
+            pygame.quit()
+            sys.exit()
+            
+
+            
+            
+            
+
+
